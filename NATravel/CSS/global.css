@@ -1,0 +1,294 @@
+/*fontfamily*/
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(black,black,black,black,
+    rgb(0 20 47),rgb(0 20 47),black ,black);
+}
+.about{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px;
+}
+    
+        .about .title2{
+            color: white;
+            font-size: 50px;
+            margin-top: 200px;
+            margin-bottom: 20px;
+        }
+        .about .text{
+            color: white;
+            font-size: 40px;
+        }
+        
+
+main{
+    position:relative;
+}
+    .header{
+        position: absolute;
+        top: 0;
+        left:0;
+        z-index: 100000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:100%;
+        padding: 60px;
+    }
+        .header .logo, 
+            h2 {
+              color: rgb(66, 58, 54);
+              font-size: 120px;
+              -webkit-text-stroke: 1px rgba(0, 0, 0, 0.897);
+              font-style: italic;
+              
+            
+        }
+
+        main section .titleTextP{
+            font-weight: 700;
+            color: rgb(224, 208, 208);
+            font-size: 140px;
+            margin-bottom:60px;
+        }
+
+
+
+    .background{
+        position: relative;
+        height: 100vh;
+
+    }
+        .videoBg{       
+            top:0;
+            z-index:-3;
+            width:100%;
+            height:100%;
+        }
+            .videoBg video{
+                position: relative;
+                top: 50%;
+                left: 50%;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                transform: translate(-50%,-50%);
+            }
+
+
+    .banner1{
+        margin-top: none;
+        position: relative;
+        width: 100%; 
+        height: 100%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+        .banner1 .content{
+            position: absolute;
+            bottom: 0%;
+            left: 0%;
+            width: 100%;
+            height: 200px;
+            z-index: 1000;
+            background: linear-gradient(to top,black, transparent);
+        }  
+
+        .content{
+            position: relative;
+            z-index: 10000;
+            text-align: center;
+        }
+             .content h2{
+                 color: white;
+                 font-size: 60px;;
+             }
+             .content p{
+                color: white;
+                font-size: 40px;
+             }
+             
+
+
+    .destination{
+        text-align: center;      
+    }   
+        .destination .content{
+            text-align: center;          
+        }
+        .destination .destinationList{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 60px;
+        }
+
+        .destinationList .city{
+            position: relative;
+            min-width: 350px;
+            height: 480px;
+            background: rgb(19, 14, 14);
+            transition: 0.6s;
+            margin: 10px;                    
+            top: 0%;
+            left: 0%;
+            height: 100%;  
+            overflow: hidden;
+            border-radius: 40px;
+        }
+            :hover .city{
+                 opacity: 0.6;}
+            .box :hover{
+                  opacity: 1;}
+
+        .city .imgBox{
+            position: relative;
+            width: 100%;
+            height: 700px;
+        }
+            .city .content{
+                width: 100%;
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+                .content h3{
+                    padding: 16px;
+                    color:white;
+                    font-size: 50px;
+                    font-weight: 500px;
+                    line-height: 30px;
+                }
+                    .content h3 span{
+                        font-size: 25px;
+                        font-weight: 300px;
+                    }
+
+
+        .form p{
+            text-align: center;
+            font-size: 40px;
+            color:rgb(223, 213, 213);
+            padding: 80px;
+        }
+            .form {
+                text-align: center;
+                padding: 50px;
+                font-style: italic;
+            }
+
+     .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+     } 
+        .footer .imgBg{
+            position: relative;
+            width:100%;
+            height: 100vh;
+            z-index: index -3;
+            height:100%;
+            margin-bottom: 40px;
+            border-radius: 40px;
+        }
+
+          
+        .footer .RRSS{
+            position: relative;
+            display: flex;
+        }   
+            .RRSS li{
+                list-style: none;
+                margin: 0px 20px;
+                max-width: 400px;
+            }
+        .footer .copyright{
+            margin: 20px;
+            color: rgb(185, 185, 185);
+            font-size: 30px;
+            font-weight: 300;
+            text-align: center;
+        }
+
+    main a{
+            position: relative;
+            display: inline-block;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            background: rgb(223, 213, 213);
+            color: rgb(19, 18, 18);
+            text-decoration: none;
+            padding: 10px 30px;
+            border-radius: 20px;
+            font-size: 40px;
+         }
+    
+    main section .titleText{
+        font-weight: 400;
+        color: white;
+        font-size: 100px;
+        margin-bottom:20px;
+    }
+
+
+@media (max-with: 600px) {
+    section{
+        padding: 40px;
+    }
+    .banner1 .content h2{
+        font-size: 40px;
+    }
+    .banner1 .content p{
+        font-size: 16px;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about .content{
+        min-width: 100%;
+        width:100%;
+        text-align: center;
+        padding-right:0px;
+    }
+    .destinationList .box{
+        position:relative;
+        max-width: 350px;
+        width: 100%;
+        height: 400px;
+        min-width: initial;
+    }       
+}
+
+
+::-webkit-scrollbar{
+    width: 20px;
+}
+::-webkit-scrollbar-track{
+    background: rgb(85, 69, 69);
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(170, 135, 111);
+    transition: 0.5s;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: rgb(204, 120, 24);
+}
+
