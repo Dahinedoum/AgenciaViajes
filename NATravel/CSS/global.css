@@ -74,11 +74,9 @@ main{
                 font-size: 70px;
             }
 
-
     .background{
         position: relative;
         height: 100vh;
-
     }
         .videoBg{       
             top:0;
@@ -267,10 +265,7 @@ main{
 
 
 @media (max-with: 600px) {
-    .header{
-        
-    }
-
+    
     section{
         padding: 40px;
     }
@@ -298,7 +293,20 @@ main{
     }       
 }
 
- 
+/*Formulario*/
+
+.form{
+    
+
+
+}
+
+
+
+
+
+/*Scroll Bar*/
+
 ::-webkit-scrollbar{
     width: 20px;
 }

@@ -5,8 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morocco's trips Contact</title>
+    <link rel="stylesheet" href="/CSS/normalize.css">
+    
 </head>
-<body>
-    <img src="/NATravel/img/FormBg.jpg" class="Bg">
+
+<style>
+   
+    .form {
+      font-size: large;
+      text-align: center;
+      font-style:italic;
+      font-weight: bold;
+      margin: 100px;
+      background-color:rgb(0 20 47); 
+      padding: 12px 20px;
+    }
+      
+    #formulario h1{
+        color: rgb(110, 68, 17);
+    }
+
+
+    input[type="range"]::after {
+      content: "€";
+      margin-right: -15px;
+     }
+
+</style>
+
+
+<body class="form">
+       
+    <h1>Morocco's Trips</h1>
+    <h3></h3>
+  <form>
+
+    <lable for="name"><b>Nombre:</b><br></lable>
+    <input type="text" placeholder="Escriba aqui..." id="name"><br>
+    <br>
+
+    <lable for="lastname"><b>Apellidos:</b><br></lable>
+    <input type="text" placeholder="Escriba aqui..." id="lastname"><br>
+    <br>
+
+    <lable for="email"><b>Correo electrónico:</b><br></lable>
+    <input type="email" placeholder="ejemplo@viejuners.com" id="email" required><br>
+    <br>
+
+    <lable for="telefono"><b>Teléfono:</b><br></lable>
+    <input type="tel" placeholder="+34 xxx xxx xxx" id="telefono" required><br>
+    <br>
+
+    
+
+    <label for="sobre ti"><b>Cuentanos sobre la experiencia que te gustaria tener:<br></b></label>
+    <textarea id="Sobre ti" name="Sobre ti" placeholder="Escriba aqui..."  rows="5" cols="60"></textarea>
+    <br>
+
+    <br>
+
+    <a href="/HTML/index.html"><button>Enviar</button></a>
+  </form>
 </body>
 </html>
