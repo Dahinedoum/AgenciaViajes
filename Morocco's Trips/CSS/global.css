@@ -1,6 +1,5 @@
 
 
-
 *{
     margin: 0;
     padding:0;
@@ -47,9 +46,7 @@ main{
         padding-right: 16px;
       }
 
-   
-
-        .header .logo, 
+        .header, 
             h2 { 
               color: rgb(236, 208, 193);
               font-size: 120px;
@@ -265,6 +262,10 @@ main{
 
 @media (max-with: 600px) {
 
+    .header h2{
+             color: red;
+           }
+
     section{
         padding: 40px;
     }
@@ -279,7 +280,7 @@ main{
     }
     .about .content{
         min-width: 100%;
-        width:100%;
+        width:50%;
         text-align: center;
         padding-right:0px;
     }
