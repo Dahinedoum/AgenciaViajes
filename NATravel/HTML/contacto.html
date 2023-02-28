@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/CSS/normalize.css">
+    <script src="https://kit.fontawesome.com/9fd6ed5691.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+
+  *{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+body{
+    background: linear-gradient(black,rgb(0 20 47),rgb(0 20 47),black);
+    color: rgb(236, 208, 193);
+    font-size: 40px;
+    text-align: center;
+    font-style:italic;
+    font-weight: bold;
+    margin: 100px;
+    padding: 12px 20px;
+    position: relative;
+    
+  }
+
+.video{     
+    width:70%;
+    height:50%;
+    border-radius: 50px;
+    }
+       .video video{
+          position: relative;
+          top: 50%;
+          left: 50%;
+          }
+
+   h1 { 
+     color: rgb(236, 208, 193);
+     font-size: 140px;
+     font-style: italic;    
+    }
+    input, textarea, button{
+      border-radius: 30px;
+    }
+    button{
+      padding: 10px;
+    }
+
+    footer{
+            padding-top: 90px;
+            color: rgb(185, 185, 185);
+            font-size: 30px;
+            text-align: center;
+     }
+
+     @media (max-with: 600px){
+      body form{
+        flex-direction: column;
+        position: relative;
+        max-width: 350px;
+        width: 100%;
+        height: 400px;
+        min-width: initial;
+      }
+      .sobreTi{
+        align-items: center;
+      }
+     }
+
+     /*Scroll Bar*/
+
+::-webkit-scrollbar{
+    width: 20px;
+}
+::-webkit-scrollbar-track{
+    background: rgb(85, 69, 69);
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(170, 135, 111);
+    transition: 0.5s;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: rgb(204, 120, 24);
+}
+
+
+</style>
+
+
+<body>
+  
+  <h1>Morocco's Trips</h1>
+  
+
+  <form>
+    <lable for="name"><b>Nombre:</b><br></lable>
+    <input type="text" placeholder="      Escriba aqui..." id="name"><br>
+    <br>
+
+    <lable for="lastname"><b>Apellidos:</b><br></lable>
+    <input type="text" placeholder="      Escriba aqui..." id="lastname"><br>
+    <br>
+
+    <lable for="email"><b>Correo electrónico:</b><br></lable>
+    <input type="email" placeholder="     ej@moroccostrips.com" id="email" required><br>
+    <br>
+
+    <lable for="telefono"><b>Teléfono:</b><br></lable>
+    <input type="tel" placeholder="          +34 xxx xxx xxx" id="telefono" required><br>
+    <br>
+
+    <label for="sobreTi"><b>Cuentanos sobre la experiencia que te gustaria tener:<br></b></label><br>
+    <textarea id="SobreTi" name="Sobre ti" placeholder="    Escriba aqui..."  rows="4" cols="30"></textarea>
+    <br><br>
+
+    <a href="/HTML/index.html"><button>Enviar</button></a><br><br>
+
+    <section class="a">
+      <video src="/img/essaouira-137535.mp4" class="video" type="videp/mp4" loop muted autoplay>
+    </section>
+  </form>
+</body>
+
+<footer>
+  <h4 class="copyright"> Morocco's Trips &copy; 2023. Todos los derechos reservados. </h4>
+</footer>
+
+</html>
