@@ -1,5 +1,4 @@
 
-
 *{
     margin: 0;
     padding:0;
@@ -10,66 +9,41 @@
 body{
     background: linear-gradient(black,black,black,black,
     rgb(0 20 47),rgb(0 20 47),black ,black);
-    
 }
 
-.about{
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 150px;
-}
-        .about .title2{
-            color: white;
-            font-size: 50px;
-            margin-top: 200px;
-            margin-bottom: 20px;
-        }
-        .about .text{
-            color: white;
-            font-size: 40px;
-        }      
-
-        
 main{
     position:relative;
 }
-    .header{
-        position: absolute;
-        background: linear-gradient(to bottom,black, transparent);
-        display: flex;
-        justify-content: space-between;
-        width:100%;
-        padding-top: 20px;
-        padding-right: 16px;
-      }
-
-        .header, 
-            h2 { 
-              color: rgb(236, 208, 193);
-              font-size: 120px;
-              -webkit-text-stroke: 1px rgba(0, 0, 0, 0.897);
-              font-style: italic;    
-           }
-
-        main section .titleTextP{
-            font-weight: 700;
-            color: rgb(224, 208, 208);
-            font-size: 140px;
-            margin-bottom:60px;
+  .header{
+    position: absolute;
+    background: linear-gradient(to bottom,black, transparent);
+    display: flex;
+    width:100%;
+    padding-top: 20px;
+    padding-left:30px;
+    height: 20vh;
+    justify-content: space-between;
+    -webkit-text-stroke: 2px rgba(0, 0, 0, 0.897);
+    }
+        h2 { 
+         color: rgb(236, 208, 193);
+         font-size: 150px;
+         font-style: italic; 
+         display: flex;
+         align-items: left;
+         flex-direction: column; 
         }
-
-            .Menu{
-                position: relative;
-                display: inline-block;
-                margin-top: 40px;
-                margin-bottom: 40px; 
-                color: rgb(236, 208, 193);          
-                padding: 10px 30px;
-                font-size: 70px;
-            }
+           /*por falta de tiempo no he podido ajustar el Menu*/
+            /* .Menu{
+              position: absolute;
+              font-size: 50px;
+              font-style: italic; 
+              display:inline-block;
+              flex-direction:column-reverse; 
+              text-decoration: none;
+              padding-left: 1600px;
+              padding-top: 40px;
+            } */
 
     .background{
         position: relative;
@@ -90,9 +64,7 @@ main{
                 height: 100%;
                 transform: translate(-50%,-50%);
             }
-
-
-    .banner1{
+    .S1{
         margin-top: none;
         position: relative;
         width: 100%; 
@@ -101,9 +73,7 @@ main{
         justify-content: center;
         align-items: center;
     }
-
-    
-        .banner1 .content{
+        .S1 .content{
             position: absolute;
             bottom: 0%;
             left: 0%;
@@ -119,16 +89,14 @@ main{
             text-align: center;
         }
              .content h2{
-                 color: white;
+                 color: rgb(236, 208, 193);
                  font-size: 60px;;
              }
              .content p{
-                color: white;
+                color: rgb(185, 185, 185);
                 font-size: 40px;
              }
              
-
-
     .destination{
         text-align: center;      
     }   
@@ -244,7 +212,7 @@ main{
             display: inline-block;
             margin-top: 40px;
             margin-bottom: 40px;
-            background: rgb(223, 213, 213);
+            background: rgb(212, 189, 189);
             color: rgb(19, 18, 18);           
             text-decoration: none;
             padding: 10px 30px;
@@ -262,17 +230,13 @@ main{
 
 @media (max-with: 600px) {
 
-    .header h2{
-             color: red;
-           }
-
     section{
         padding: 40px;
     }
-    .banner1 .content h2{
+    .S1 .content h2{
         font-size: 40px;
     }
-    .banner1 .content p{
+    .S1 .content p{
         font-size: 16px;
     }
     .about{
@@ -292,8 +256,6 @@ main{
         min-width: initial;
     }       
 }
-
-
 
 /*Scroll Bar*/
 
